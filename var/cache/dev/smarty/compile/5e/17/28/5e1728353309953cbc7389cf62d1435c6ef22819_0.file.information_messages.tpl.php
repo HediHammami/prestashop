@@ -1,0 +1,45 @@
+<?php
+/* Smarty version 4.3.4, created on 2024-03-16 01:33:14
+  from 'C:\xampp\htdocs\prestashop\admin\themes\new-theme\template\components\layout\information_messages.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '4.3.4',
+  'unifunc' => 'content_65f4e8cad36bd5_54126811',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '5e1728353309953cbc7389cf62d1435c6ef22819' => 
+    array (
+      0 => 'C:\\xampp\\htdocs\\prestashop\\admin\\themes\\new-theme\\template\\components\\layout\\information_messages.tpl',
+      1 => 1708958657,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_65f4e8cad36bd5_54126811 (Smarty_Internal_Template $_smarty_tpl) {
+if ((isset($_smarty_tpl->tpl_vars['informations']->value)) && count($_smarty_tpl->tpl_vars['informations']->value) && $_smarty_tpl->tpl_vars['informations']->value) {?>
+  <div class="bootstrap">
+    <div class="alert alert-info">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <ul id="infos_block" class="list-unstyled">
+        <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['informations']->value, 'info');
+$_smarty_tpl->tpl_vars['info']->do_else = true;
+if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['info']->value) {
+$_smarty_tpl->tpl_vars['info']->do_else = false;
+?>
+          <li><?php echo $_smarty_tpl->tpl_vars['info']->value;?>
+</li>
+        <?php
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+      </ul>
+    </div>
+  </div>
+<?php }
+}
+}

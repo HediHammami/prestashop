@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>customcategory</name>
+    <displayName><![CDATA[Custom Category Display]]></displayName>
+    <version><![CDATA[1.0.0]]></version>
+    <description><![CDATA[Displays categories with cover images on the homepage.]]></description>
+    <author><![CDATA[MedHedi]]></author>
+    <tab><![CDATA[front_office_features]]></tab>
+    <is_configurable>0</is_configurable>
+    <need_instance>1</need_instance>
+</module>
